@@ -1,0 +1,18 @@
+000 09 104 0B 105 #colocando g em MQ e multiplicando a entrada
+001 21 103 0C 100 #armazenando o produto (y) em 103 e o dividindo por 2 para obter k
+002 0A 000 21 102 #pegando o quociente (k) da divisao e armazenando em 102
+003 01 103 0C 102 #colocando y em AC e dividindo y/k
+004 0A 000 05 102 #transferindo o quociente da divisao y/k para AC e somando com k
+005 0C 100 0A 000 #dividindo a soma por 2 e a transferindo para AC
+006 21 102 01 101 #armazenando o novo valor de k em 102 e carrega o contador
+007 06 106 21 101 #decrementando contador e o salvando
+008 0F 003 01 102 #repetindo a operação de calcular o k por 10 vezes e colocamos o valor da raiz em AC
+009 0E 400 #finalizando o pograma
+
+
+
+100 00 00 00 00 02 #numero 2
+101 00 00 00 00 09 #contador do numero de operacoes
+104 00 00 00 00 10 #gravidade
+105 00 00 00 35 00 #alcance
+106 00 00 00 00 01 #decrementa o contador
